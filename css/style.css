@@ -146,15 +146,31 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
     transform: scale(1.05);
 }
 
-.social-links img {
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
-    transition: transform 0.2s;
+/* Social Links Icon Styles */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px; /* Replaced margin-right for even spacing */
+    background-color: #f1f1f1;
+    color: var(--dark-gray);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    text-decoration: none;
+    vertical-align: middle; /* Ensures vertical alignment */
 }
 
-.social-links img:hover {
-    transform: scale(1.1);
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.social-links a i {
+    font-size: 1.2rem;
+    line-height: 1; /* Ensures icon is centered vertically */
 }
 
 footer small a {
