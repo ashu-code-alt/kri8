@@ -1,23 +1,149 @@
 /* Custom stylesheet */
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
+    --primary-color: #3498db;
+    --secondary-color: #5D6D7E;
     --light-gray: #f8f9fa;
-    --dark-gray: #343a40;
+    --dark-gray: #2C3E50;
+    --accent-color: #E74C3C;
+    /* New Bright Transparent Colors */
+    --card-1-bg: rgba(22, 160, 133, 0.75); /* Bright Teal */
+    --card-1-icon-bg: rgba(255, 255, 255, 0.25);
+    --card-1-text: #ffffff;
+    --card-2-bg: rgba(41, 128, 185, 0.75); /* Bright Blue */
+    --card-2-icon-bg: rgba(255, 255, 255, 0.25);
+    --card-2-text: #ffffff;
 }
 
 body {
-    padding-top: 4.5rem; /* space for fixed navbar */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding-top: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+}
+
+main {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-gray);
 }
 
 .hero {
-    height: 80vh;
-    background: url('../images/hero.jpg') center/cover no-repeat;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1784&auto=format&fit=crop') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.hero h1, .hero h2, .hero p {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.page-header {
+    background-color: var(--dark-gray);
+    color: #FFFFFF;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.page-header h1, .page-header p {
+    color: #FFFFFF;
+}
+
+/* Services Section & Flip Card Styles */
+.services-section {
+    background-color: var(--light-gray);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.is-flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flipper-btn {
+    text-decoration: none;
+    color: var(--card-1-text);
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
+
+/* Card Specific Colors */
+.card-color-1 { background-color: var(--card-1-bg); color: var(--card-1-text); }
+.card-color-2 { background-color: var(--card-2-bg); color: var(--card-2-text); }
+
+.card-color-1 h5, .card-color-2 h5 { color: var(--card-1-text); }
+.card-color-1 .flipper-btn, .card-color-2 .flipper-btn { color: var(--card-1-text); }
+
+.service-icon {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-color-1 .service-icon { background-color: var(--card-1-icon-bg); }
+.card-color-2 .service-icon { background-color: var(--card-2-icon-bg); }
+
+.service-icon i {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.team-card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.team-img {
+    filter: grayscale(50%);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
 }
 
 .social-links img {
@@ -38,4 +164,34 @@ footer small a {
 
 footer small a:hover {
     color: var(--primary-color);
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
