@@ -12,6 +12,15 @@
     --card-2-bg: rgba(41, 128, 185, 0.75); /* Bright Blue */
     --card-2-icon-bg: rgba(255, 255, 255, 0.25);
     --card-2-text: #ffffff;
+    --card-3-bg: rgba(230, 126, 34, 0.75);   /* Industrial Automation – orange */
+    --card-3-icon-bg: rgba(255, 255, 255, 0.25);
+    --card-3-text: #ffffff;
+    --card-4-bg: rgba(142, 68, 173, 0.75);   /* Embedded Systems – purple */
+    --card-4-icon-bg: rgba(255, 255, 255, 0.25);
+    --card-4-text: #ffffff;
+    --card-5-bg: rgba(52, 152, 219, 0.75);   /* Product Management – blue */
+    --card-5-icon-bg: rgba(255, 255, 255, 0.25);
+    --card-5-text: #ffffff;
 }
 
 body {
@@ -109,9 +118,21 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
 /* Card Specific Colors */
 .card-color-1 { background-color: var(--card-1-bg); color: var(--card-1-text); }
 .card-color-2 { background-color: var(--card-2-bg); color: var(--card-2-text); }
+.card-color-3 { background-color: var(--card-3-bg); color: var(--card-3-text); }
+.card-color-4 { background-color: var(--card-4-bg); color: var(--card-4-text); }
+.card-color-5 { background-color: var(--card-5-bg); color: var(--card-5-text); }
 
-.card-color-1 h5, .card-color-2 h5 { color: var(--card-1-text); }
-.card-color-1 .flipper-btn, .card-color-2 .flipper-btn { color: var(--card-1-text); }
+.card-color-1 h5 { color: var(--card-1-text); }
+.card-color-2 h5 { color: var(--card-2-text); }
+.card-color-3 h5 { color: var(--card-3-text); }
+.card-color-4 h5 { color: var(--card-4-text); }
+.card-color-5 h5 { color: var(--card-5-text); }
+
+.card-color-1 .flipper-btn { color: var(--card-1-text); }
+.card-color-2 .flipper-btn { color: var(--card-2-text); }
+.card-color-3 .flipper-btn { color: var(--card-3-text); }
+.card-color-4 .flipper-btn { color: var(--card-4-text); }
+.card-color-5 .flipper-btn { color: var(--card-5-text); }
 
 .service-icon {
     margin: 0 auto;
@@ -125,6 +146,9 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
 
 .card-color-1 .service-icon { background-color: var(--card-1-icon-bg); }
 .card-color-2 .service-icon { background-color: var(--card-2-icon-bg); }
+.card-color-3 .service-icon { background-color: var(--card-3-icon-bg); }
+.card-color-4 .service-icon { background-color: var(--card-4-icon-bg); }
+.card-color-5 .service-icon { background-color: var(--card-5-icon-bg); }
 
 .service-icon i {
     font-size: 2.5rem;
