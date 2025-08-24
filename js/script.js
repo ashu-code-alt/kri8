@@ -5,7 +5,7 @@ const translations = {
         'nav-offerings': 'Services',
         'nav-contact': 'Contact',
         'hero-subtitle': 'Beyond the conventional',
-        'hero-text': 'Your journey with Kri8 Solutions begins here. We place great value on consulting quality and excellent service. Join us on our shared path to growth and success. We\'re glad you\'re here and part of our story!',
+        'hero-text': 'Your journey with Kri8 Solutions begins here. We place great value on consulting quality and excellent service. Join us on our shared path to growth and success. We\'re glad you\'re here and a part of our story!',
         'hero-cta': 'Let\'s go! <i class="bi bi-arrow-right-short"></i>',
         'stories-title': 'Stories told in pixels',
         'stories-text': 'At Kri8 Solutions, we\'re proud of our adaptability and commitment to excellence in every area of our IT consulting. Explore our offerings and discover how we can contribute to your success.',
