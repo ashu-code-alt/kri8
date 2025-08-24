@@ -42,8 +42,8 @@ const translations = {
         'contact-email': 'Email address *',
         'contact-message': 'Message *',
         'contact-submit': 'Submit',
-        'imprint': 'Imprint'
-        ,
+        'imprint': 'Imprint',
+        'privacy': 'Privacy Policy',
         'imp-title': 'Imprint',
         'imp-info-heading': 'Information according to § 5 TMG',
         'imp-address': 'Kri8 Solutions UG (limited liability)<br>Freiligrathstr. 13<br>55131 Mainz',
