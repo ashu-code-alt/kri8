@@ -6,19 +6,19 @@
     --dark-gray: #2C3E50;
     --accent-color: #E74C3C;
     /* New Bright Transparent Colors */
-    --card-1-bg: rgba(22, 160, 133, 0.75); /* Bright Teal */
+    --card-1-bg: rgba(46, 204, 113, 0.85);   /* Softwareentwicklung – green */
     --card-1-icon-bg: rgba(255, 255, 255, 0.5);
     --card-1-text: #ffffff;
-    --card-2-bg: rgba(41, 128, 185, 0.75); /* Bright Blue */
+    --card-2-bg: rgba(41, 128, 185, 0.75);   /* Business/Unternehmen – blue */
     --card-2-icon-bg: rgba(255, 255, 255, 0.5);
     --card-2-text: #ffffff;
-    --card-3-bg: rgba(230, 126, 34, 0.75);   /* Industrial Automation – orange */
+    --card-3-bg: rgba(255, 152, 0, 0.85);    /* Industrial Automation – orange */
     --card-3-icon-bg: rgba(255, 255, 255, 0.25);
     --card-3-text: #ffffff;
-    --card-4-bg: rgba(142, 68, 173, 0.75);   /* Embedded Systems – purple */
+    --card-4-bg: rgba(63, 81, 181, 0.85);    /* Embedded Systems – indigo */
     --card-4-icon-bg: rgba(255, 255, 255, 0.25);
     --card-4-text: #ffffff;
-    --card-5-bg: rgba(52, 152, 219, 0.75);   /* Product Management – blue */
+    --card-5-bg: rgba(156, 39, 176, 0.85);   /* Product Management – purple */
     --card-5-icon-bg: rgba(255, 255, 255, 0.25);
     --card-5-text: #ffffff;
 }
